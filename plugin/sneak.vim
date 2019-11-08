@@ -363,18 +363,18 @@ xnoremap <silent> <Plug>SneakLabel_S :<c-u>call sneak#wrap(visualmode(), 2, 1, 2
 onoremap <silent> <Plug>SneakLabel_s :<c-u>call sneak#wrap(v:operator, 2, 0, 2, 2)<cr>
 onoremap <silent> <Plug>SneakLabel_S :<c-u>call sneak#wrap(v:operator, 2, 1, 2, 2)<cr>
 
-if !hasmapto('<Plug>SneakForward') && !hasmapto('<Plug>Sneak_s', 'n') && mapcheck('s', 'n') ==# ''
-  nmap s <Plug>Sneak_s
-endif
-if !hasmapto('<Plug>SneakBackward') && !hasmapto('<Plug>Sneak_S', 'n') && mapcheck('S', 'n') ==# ''
-  nmap S <Plug>Sneak_S
-endif
-if !hasmapto('<Plug>Sneak_s', 'o') && mapcheck('z', 'o') ==# ''
-  omap z <Plug>Sneak_s
-endif
-if !hasmapto('<Plug>Sneak_S', 'o') && mapcheck('Z', 'o') ==# ''
-  omap Z <Plug>Sneak_S
-endif
+"if !hasmapto('<Plug>SneakForward') && !hasmapto('<Plug>Sneak_s', 'n') && mapcheck('s', 'n') ==# ''
+"  nmap s <Plug>Sneak_s
+"endif
+"if !hasmapto('<Plug>SneakBackward') && !hasmapto('<Plug>Sneak_S', 'n') && mapcheck('S', 'n') ==# ''
+"  nmap S <Plug>Sneak_S
+"endif
+"if !hasmapto('<Plug>Sneak_s', 'o') && mapcheck('z', 'o') ==# ''
+"  omap z <Plug>Sneak_s
+"endif
+"if !hasmapto('<Plug>Sneak_S', 'o') && mapcheck('Z', 'o') ==# ''
+"  omap Z <Plug>Sneak_S
+"endif
 
 if !hasmapto('<Plug>Sneak_;', 'n') && !hasmapto('<Plug>SneakNext', 'n') && mapcheck(';', 'n') ==# ''
   nmap ; <Plug>Sneak_;
